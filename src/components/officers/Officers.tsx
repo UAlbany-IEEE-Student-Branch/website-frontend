@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Members } from '../../../../backend/src/model/members';
-import * as officers from './fetchOfficers';
+import { Members } from '../../models/members';
+import { fetchEboard, fetchDboard, fetchJboard } from '../../util/fetchOfficers';
 
 export const Officers: React.FC = () => {
 
@@ -25,18 +25,18 @@ export const Officers: React.FC = () => {
             return fetchedOfficers;
         }
 
-        officers.fetchEboard().then(eboard => {
+        fetchEboard().then(eboard => {
             const eboardCards = makeOfficerCards(eboard);
             setEboard(eboardCards);
             setSelectedOfficersGroup(eboardCards);
         });
 
-        officers.fetchJboard().then(jboard => {
+        fetchJboard().then(jboard => {
             const jboardCards = makeOfficerCards(jboard);
             setJboard(jboardCards);
         });
 
-        officers.fetchDboard().then(dboard => {
+        fetchDboard().then(dboard => {
             const dboardCards = makeOfficerCards(dboard);
             setDboard(dboardCards);
         });
@@ -150,7 +150,7 @@ export const Officers: React.FC = () => {
 
 const OfficerCard: React.FC<Members> = ({first_name, last_name, role, position, linkedIn, start_year, end_year, image}) => {
     function getPlaceholder(event: any) {
-        event.target.src = "http://localhost:5000/members/placeholder";
+        event.target.src = "../../images/placeholder/profile_placeholder_0.jpg";
     }
 
     return (

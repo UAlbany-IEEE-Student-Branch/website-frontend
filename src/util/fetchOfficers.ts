@@ -1,8 +1,8 @@
 import axios, { AxiosResponse } from 'axios';
-import { Members } from '../../../../backend/src/model/members';
+import { Members } from '../models/members';
 
 async function fetchOfficers(officerType: string) {
-    let response: void | AxiosResponse<any> = await axios.get('http://localhost:5000/members/' + officerType)
+    let response: void | AxiosResponse<any> = await axios.get('http://100.26.246.4:5000/members/' + officerType)
         .catch((error) => {
             console.log(error.config);
             if (error.response) {
@@ -64,3 +64,4 @@ export async function fetchDboard() {
         });
     return dboard;
 }
+

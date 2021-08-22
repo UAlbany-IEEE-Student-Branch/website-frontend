@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Events } from '../../../../backend/src/model/events';
-import fetchEvents from './fetchEvents';
+import { Events } from '../../models/events';
+import fetchEvents from '../../util/fetchEvents';
 
 export const Slider: React.FC = () => {
 
@@ -99,7 +99,7 @@ export const Slider: React.FC = () => {
 const EventComponent: React.FC<Events> = ({event_name, image, year, month, day}) => {
 
     function getPlaceholder(event: any) {
-        event.target.src = "http://localhost:5000/events/placeholder";        
+        event.target.src = "../../images/placeholder/ieee_placeholder_thumbnail.jpg";   
     }
 
     return (
