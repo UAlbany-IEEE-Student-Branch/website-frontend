@@ -1,8 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
 import { Events } from '../models/events';
-// import * as fs from 'fs';
-import { createReadStream } from 'fs';
-import csv from 'csv-parser';
 
 export default async function fetchEvents() {
     try {
