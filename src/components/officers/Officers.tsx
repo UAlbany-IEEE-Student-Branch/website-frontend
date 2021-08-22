@@ -9,18 +9,20 @@ export const Officers: React.FC = () => {
         function makeOfficerCards(data: any) {
             let fetchedOfficers: JSX.Element[] = [];
             console.log(fetchedOfficers);
-            data.map((item: Members) => {
-                fetchedOfficers.push(<OfficerCard
-                    id={item.id}
-                    first_name={item.first_name}
-                    last_name={item.last_name}
-                    role={item.role}
-                    position={item.position}
-                    linkedIn={item.linkedIn}
-                    start_year={item.start_year}
-                    end_year={item.end_year}
-                    image={item.image}
-                />);
+            fetchedOfficers = data.map((item: Members) => {
+                return (
+                    <OfficerCard
+                        id={item.id}
+                        first_name={item.first_name}
+                        last_name={item.last_name}
+                        role={item.role}
+                        position={item.position}
+                        linkedIn={item.linkedIn}
+                        start_year={item.start_year}
+                        end_year={item.end_year}
+                        image={item.image}
+                    />
+                );
             });
             return fetchedOfficers;
         }

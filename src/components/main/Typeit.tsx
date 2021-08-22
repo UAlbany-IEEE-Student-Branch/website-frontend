@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import './typeit.css';
 
 type Props = {
@@ -9,13 +9,8 @@ type Props = {
 
 const Typeit:React.FC<Props> = ({className, phrase, delay}) => {
     
-    const [text, setText] = useState("");
-
     const phraseArray = phrase.split('');
     var index = 0
-    const timeout = (ms: number) => {
-        return new Promise(resolve => setTimeout(resolve, ms));
-    }
 
     const typingAnimation = () => {
         if(index < phraseArray.length){
@@ -28,12 +23,12 @@ const Typeit:React.FC<Props> = ({className, phrase, delay}) => {
 
     useEffect(()=>{
         typingAnimation();
-    }, [])
+    })
 
     return(
         <div className={className}>
             <div className="wordColumn">
-                <h1 className="word"></h1>
+                <h1 className="word"> </h1>
             </div>
         </div>
     );

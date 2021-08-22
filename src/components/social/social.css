@@ -63,3 +63,10 @@
 .social-container li:nth-child(6) a {
     color: #007bb5;
 }
+
+.hide-text {
+    /* text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; */
+    font-size: 0;
+}
