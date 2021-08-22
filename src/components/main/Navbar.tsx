@@ -36,7 +36,6 @@ const Navbar: React.FC<Props> = ({className}) =>{
         }
 
         e.preventDefault();
-        console.log(e.target.className);
 
         let circuits: HTMLImageElement = document.getElementById("circuits") as HTMLImageElement;
 

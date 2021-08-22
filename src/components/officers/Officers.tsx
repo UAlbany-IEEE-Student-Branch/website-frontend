@@ -4,44 +4,57 @@ import { fetchEboard, fetchDboard, fetchJboard } from '../../util/fetchOfficers'
 
 export const Officers: React.FC = () => {
 
+    function makeOfficerCards(data: any) {
+        let fetchedOfficers: JSX.Element[] = [];
+        fetchedOfficers = data.map((item: Members) => {
+            return (
+                <OfficerCard
+                    id={item.id}
+                    first_name={item.first_name}
+                    last_name={item.last_name}
+                    role={item.role}
+                    position={item.position}
+                    linkedIn={item.linkedIn}
+                    start_year={item.start_year}
+                    end_year={item.end_year}
+                    image={item.image}
+                />
+            );
+        });
+        return fetchedOfficers;
+    }
+
     // simulate componentDidMount(), do axios call:
     useEffect(() => {
-        function makeOfficerCards(data: any) {
-            let fetchedOfficers: JSX.Element[] = [];
-            console.log(fetchedOfficers);
-            fetchedOfficers = data.map((item: Members) => {
-                return (
-                    <OfficerCard
-                        id={item.id}
-                        first_name={item.first_name}
-                        last_name={item.last_name}
-                        role={item.role}
-                        position={item.position}
-                        linkedIn={item.linkedIn}
-                        start_year={item.start_year}
-                        end_year={item.end_year}
-                        image={item.image}
-                    />
-                );
+        
+        fetchEboard()
+            .then(eboard => {
+                const eboardCards = makeOfficerCards(eboard);
+                setEboard(eboardCards);
+                setSelectedOfficersGroup(eboardCards);
+            })
+            .catch(error => {
+                console.log(error);
             });
-            return fetchedOfficers;
-        }
 
-        fetchEboard().then(eboard => {
-            const eboardCards = makeOfficerCards(eboard);
-            setEboard(eboardCards);
-            setSelectedOfficersGroup(eboardCards);
-        });
+        fetchJboard()
+            .then(jboard => {
+                const jboardCards = makeOfficerCards(jboard);
+                setJboard(jboardCards);
+            })
+            .catch(error => {
+                console.log(error);
+            });
 
-        fetchJboard().then(jboard => {
-            const jboardCards = makeOfficerCards(jboard);
-            setJboard(jboardCards);
-        });
-
-        fetchDboard().then(dboard => {
-            const dboardCards = makeOfficerCards(dboard);
-            setDboard(dboardCards);
-        });
+        fetchDboard()
+            .then(dboard => {
+                const dboardCards = makeOfficerCards(dboard);
+                setDboard(dboardCards);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+        
     }, []);
 
     const [eboard, setEboard] = useState([<OfficerCard
@@ -153,6 +166,7 @@ export const Officers: React.FC = () => {
 const OfficerCard: React.FC<Members> = ({first_name, last_name, role, position, linkedIn, start_year, end_year, image}) => {
     function getPlaceholder(event: any) {
         event.target.src = "http://100.26.246.4:5000/placeholder/portrait.jpg";
+        // event.target.src = "http://localhost:5000/placeholder/portrait.jpg";
     }
 
     return (

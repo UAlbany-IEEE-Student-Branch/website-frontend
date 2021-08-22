@@ -7,22 +7,26 @@ export const Slider: React.FC = () => {
     // simulate componentDidMount(), do axios call
     useEffect(() => {
         (async () => {
-            const fetchedEvents = await fetchEvents();
-            let eventCards: JSX.Element[] = [];
-            fetchedEvents.forEach((item: Events) => {
-                eventCards.push(
-                    <EventComponent
-                        id={item.id}
-                        event_name={item.event_name}
-                        image={item.image}
-                        year={item.year}
-                        month={item.month}
-                        day={item.day}
-                        past_status={item.past_status}
-                    />
-                );
-            });
-            setEvents(eventCards);
+            try {
+                const fetchedEvents = await fetchEvents();
+                let eventCards: JSX.Element[] = [];
+                fetchedEvents.forEach((item: Events) => {
+                    eventCards.push(
+                        <EventComponent
+                            id={item.id}
+                            event_name={item.event_name}
+                            image={item.image}
+                            year={item.year}
+                            month={item.month}
+                            day={item.day}
+                            past_status={item.past_status}
+                        />
+                    );
+                });
+                setEvents(eventCards);
+            } catch (error) {
+                console.log(error);
+            }
         })();
     }, []);
 
@@ -99,7 +103,8 @@ export const Slider: React.FC = () => {
 const EventComponent: React.FC<Events> = ({event_name, image, year, month, day}) => {
 
     function getPlaceholder(event: any) {
-        event.target.src = "http://100.26.246.4:5000/placeholder/event.jpg";   
+        event.target.src = "http://100.26.246.4:5000/placeholder/event.jpg";
+        // event.target.src = "http://localhost:5000/placeholder/event.jpg";   
     }
 
     return (

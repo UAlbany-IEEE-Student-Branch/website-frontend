@@ -2,7 +2,9 @@ import axios, { AxiosResponse } from 'axios';
 import { Events } from '../models/events';
 
 export default async function fetchEvents() {
-    try {
+    // 'http://100.26.246.4:5000/events'
+    // 'http://localhost:5000/events'
+    try { 
         const response: AxiosResponse<any> = await axios.get('http://100.26.246.4:5000/events');
         return makeEvents(response);
     } catch (error) {
@@ -24,15 +26,3 @@ function makeEvents(response: AxiosResponse<any>) {
     });
     return fetchedOfficers;
 }
-// let events: Events[];
-// export default function fetchEvents() {
-//     createReadStream('./db/Events.csv')
-//         .pipe(csv())
-//         .on('data', row => {
-//             events.push(row);
-//         })
-//         .on('end', () => {
-//             console.log(events);
-//         });
-//     return events;
-// }

@@ -2,18 +2,15 @@ import axios, { AxiosResponse } from 'axios';
 import { Members } from '../models/members';
 
 async function fetchOfficers(officerType: string) {
-    let response: void | AxiosResponse<any> = await axios.get('http://100.26.246.4:5000/members/' + officerType)
-        .catch((error) => {
-            console.log(error.config);
-            if (error.response) {
-                throw new Error(`Axios response error: ${error.response.data}\nStatus: ${error.response.status}\nHeaders: ${error.response.headers}`);
-            } else if (error.request) {
-                throw new Error(`Axios request error: ${error.request}`);
-            } else {
-                throw new Error(`Axios error: ${error.message}`);
-            }
-        });
-    return response;
+    // 'http://100.26.246.4:5000/members/' + officerType
+    // 'http://localhost:5000/members/' + officerType
+    try {
+        let response: void | AxiosResponse<any> = await axios.get('http://100.26.246.4:5000/members/' + officerType);
+        return response;
+    } catch (error) {
+        console.log(error);
+        throw error;
+    }    
 }
 
 function modifyFetchedOfficer(officer: Members) {
@@ -31,12 +28,13 @@ function makeOfficers(response: AxiosResponse<any>) {
 
 export async function fetchEboard() {
 
-    const eboard = await fetchOfficers('eboard')
+    const eboard = fetchOfficers('eboard')
         .then(response => {
-            return makeOfficers(response);
+            return makeOfficers(response as AxiosResponse);
         })
         .catch(error => {
             console.log(`Error getting eboard: ${error}`);
+            throw error;
         }); 
     return eboard;
 }
@@ -45,22 +43,24 @@ export async function fetchJboard() {
     
     const jboard = await fetchOfficers('jboard')
         .then(response => {
-            return makeOfficers(response);
+            return makeOfficers(response as AxiosResponse);
         })
         .catch(error => {
             console.log(`Error getting jboard: ${error}`);
+            throw error;
         });
     return jboard;
 }
 
 export async function fetchDboard() {
     
-    const dboard = await fetchOfficers('dboard')
+    const dboard = fetchOfficers('dboard')
         .then(response => {
-            return makeOfficers(response);
+            return makeOfficers(response as AxiosResponse);
         })
         .catch(error => {
             console.log(`Error getting dboard: ${error}`);
+            throw error;
         });
     return dboard;
 }
