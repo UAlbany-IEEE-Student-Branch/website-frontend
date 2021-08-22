@@ -152,7 +152,7 @@ export const Officers: React.FC = () => {
 
 const OfficerCard: React.FC<Members> = ({first_name, last_name, role, position, linkedIn, start_year, end_year, image}) => {
     function getPlaceholder(event: any) {
-        event.target.src = "../../images/placeholder/profile_placeholder_0.jpg";
+        event.target.src = "http://100.26.246.4:5000/placeholder/portrait.jpg";
     }
 
     return (
