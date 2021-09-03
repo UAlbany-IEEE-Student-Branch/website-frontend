@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Members } from '../../models/members';
 import { fetchEboard, fetchDboard, fetchJboard } from '../../util/fetchOfficers';
+import placeholder from '../../assets/placeholder/profile.jpg';
 
 export const Officers: React.FC = () => {
 
@@ -145,7 +146,7 @@ export const Officers: React.FC = () => {
 
 const OfficerCard: React.FC<Members> = ({first_name, last_name, role, position, linkedIn, start_year, end_year, image}) => {
     function getPlaceholder(event: any) {
-        event.target.src = "/images/placeholder/profile.jpg";
+        event.target.src = placeholder;
     }
 
     return (

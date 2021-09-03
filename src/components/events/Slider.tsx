@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Events } from '../../models/events';
 import fetchEvents from '../../util/fetchEvents';
+import placeholder from '../../assets/placeholder/event.jpg';
 
 export const Slider: React.FC = () => {
 
@@ -107,7 +108,7 @@ export const Slider: React.FC = () => {
 const EventComponent: React.FC<Events> = ({event_name, image, year, month, day}) => {
 
     function getPlaceholder(event: any) {
-        event.target.src = '/images/placeholder/event.jpg';
+        event.target.src = placeholder;
     }
 
     return (
