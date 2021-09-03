@@ -1,0 +1,167 @@
+[
+    {
+        "end_year": -1,
+        "first_name": "Robin",
+        "id": 1,
+        "image": "/images/2020-2021/officers/robin_kim.jpg",
+        "last_name": "Kim",
+        "linkedIn": "https://www.linkedin.com/in/robin-kim-b5365a11a/",
+        "position": "Web Master",
+        "role": "Eboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Tony",
+        "id": 2,
+        "image": "/images/2020-2021/officers/tony_comanzo.jpg",
+        "last_name": "Comanzo",
+        "linkedIn": "https://www.linkedin.com/in/anthony-comanzo-110313164/",
+        "position": "Secretary",
+        "role": "Eboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "James",
+        "id": 3,
+        "image": "/images/2020-2021/officers/james_oswald.jpg",
+        "last_name": "Oswald",
+        "linkedIn": "https://www.linkedin.com/in/james-oswald-a29a80132/",
+        "position": "Chair",
+        "role": "Eboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Connor",
+        "id": 4,
+        "image": "/images/2020-2021/officers/connor_walsh.jpg",
+        "last_name": "Walsh",
+        "linkedIn": "https://www.linkedin.com/in/connorwalsh21/",
+        "position": "Vice Chair",
+        "role": "Eboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Emily",
+        "id": 5,
+        "image": "/images/2020-2021/officers/emily_stryker.jpg",
+        "last_name": "Stryker",
+        "linkedIn": "https://www.linkedin.com/in/emily-stryker-68315916a/",
+        "position": "Outreach Director",
+        "role": "Dboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Jun-won",
+        "id": 6,
+        "image": "/images/2020-2021/officers/jun-won_oh.jpg",
+        "last_name": "Oh",
+        "linkedIn": "https://www.linkedin.com/in/jun-won-oh-733053200/",
+        "position": "Social Media Director",
+        "role": "Dboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Allanah",
+        "id": 7,
+        "image": "/images/2020-2021/officers/allanah_matthews.jpg",
+        "last_name": "Matthews",
+        "linkedIn": "https://www.linkedin.com/in/allanah-matthews/",
+        "position": "Junior Treasurer",
+        "role": "Jboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Matthew",
+        "id": 8,
+        "image": "/images/2020-2021/officers/matthew_killeen.jpg",
+        "last_name": "Killeen",
+        "linkedIn": "https://www.linkedin.com/in/matthew-r-killeen-bb436a1b9/",
+        "position": "Communication Director",
+        "role": "Dboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Carolyn",
+        "id": 9,
+        "image": "/images/2020-2021/officers/portrait.jpg",
+        "last_name": "Kaminski",
+        "linkedIn": "https://www.linkedin.com/in/carolyn-kaminski/",
+        "position": "Graduate Vice Chair",
+        "role": "Eboard",
+        "start_year": 2019
+    },
+    {
+        "end_year": -1,
+        "first_name": "Daniel",
+        "id": 10,
+        "image": "/images/2020-2021/officers/daniel_brown.jpg",
+        "last_name": "Brown",
+        "linkedIn": "",
+        "position": "Intelligence Director",
+        "role": "Dboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Godswill",
+        "id": 11,
+        "image": "/images/2020-2021/officers/godswill_utionkpan.jpg",
+        "last_name": "Utionkpan",
+        "linkedIn": "https://www.linkedin.com/in/godswill-utionkpan-44bb72130/",
+        "position": "Social Media Director",
+        "role": "Dboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Joshua",
+        "id": 12,
+        "image": "/images/2020-2021/officers/joshua_cho.jpg",
+        "last_name": "Cho",
+        "linkedIn": "",
+        "position": "Treasurer",
+        "role": "Eboard",
+        "start_year": 2019
+    },
+    {
+        "end_year": -1,
+        "first_name": "Kiran",
+        "id": 13,
+        "image": "/images/2020-2021/officers/portrait.jpg",
+        "last_name": "Aziz",
+        "linkedIn": "",
+        "position": "Junior Vice Chair",
+        "role": "Jboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Matthew",
+        "id": 14,
+        "image": "/images/2020-2021/officers/matthew_cheung.jpg",
+        "last_name": "Cheung",
+        "linkedIn": "https://www.linkedin.com/in/matthew-cheung-4a391a208/",
+        "position": "Junior Chair",
+        "role": "Jboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Nicholas",
+        "id": 15,
+        "image": "/images/2020-2021/officers/nicholas_lysyuk.jpg",
+        "last_name": "Lysyuk",
+        "linkedIn": "https://www.linkedin.com/in/nicholas-lysyuk-83ba9a85/",
+        "position": "Junior Secretary",
+        "role": "Jboard",
+        "start_year": 2020
+    }
+]

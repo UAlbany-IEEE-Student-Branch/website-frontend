@@ -1,0 +1,37 @@
+[
+    {
+        "am_pm": "pm",
+        "day": "Monday",
+        "event": "Professional Development Night: Coding Practice",
+        "id": 1,
+        "time": 8
+    },
+    {
+        "am_pm": "",
+        "day": "Tuesday",
+        "event": "",
+        "id": 2,
+        "time": 0
+    },
+    {
+        "am_pm": "",
+        "day": "Wednesday",
+        "event": "",
+        "id": 3,
+        "time": 0
+    },
+    {
+        "am_pm": "",
+        "day": "Thursday",
+        "event": "",
+        "id": 4,
+        "time": 0
+    },
+    {
+        "am_pm": "pm",
+        "day": "Friday",
+        "event": "Side Project development night: side project motivation, assistance, questions, and ideas",
+        "id": 5,
+        "time": 8
+    }
+]
