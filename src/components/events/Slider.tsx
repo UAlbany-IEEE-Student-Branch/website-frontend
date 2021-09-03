@@ -9,20 +9,17 @@ export const Slider: React.FC = () => {
         (async () => {
             try {
                 const fetchedEvents = await fetchEvents();
-                let eventCards: JSX.Element[] = [];
-                fetchedEvents.forEach((item: Events) => {
-                    eventCards.push(
-                        <EventComponent
-                            id={item.id}
-                            event_name={item.event_name}
-                            image={item.image}
-                            year={item.year}
-                            month={item.month}
-                            day={item.day}
-                            past_status={item.past_status}
-                        />
-                    );
-                });
+                const eventCards = fetchedEvents.map(item => (
+                    <EventComponent
+                        id={item.id}
+                        event_name={item.event_name}
+                        image={item.image}
+                        year={item.year}
+                        month={item.month}
+                        day={item.day}
+                        past_status={item.past_status}
+                    />
+                ));
                 setEvents(eventCards);
             } catch (error) {
                 console.log(error);
@@ -48,15 +45,18 @@ export const Slider: React.FC = () => {
         const slide = document.querySelector('.slide') as Element;
         const slideStyles: CSSStyleDeclaration = window.getComputedStyle(slide);
 
-        const browserWidth: number = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        // const browserWidth: number = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
         // +x and parseInt both convert string to integer
         // using slice to get rid of px
         const slideMarginLeft: number = +(slideStyles.getPropertyValue('margin-left').slice(0, -2));
-        const slideMarginRight: number = parseInt(slideStyles.getPropertyValue('margin-right').slice(0, -2));
-        const slideWidth: number = parseInt(slideStyles.getPropertyValue('min-width')) / 100;
+        const slideMarginRight: number = parseInt(slideStyles.getPropertyValue('margin-right').slice(0, -2));        
+        
+        const slideWidth: number = parseInt(slideStyles.getPropertyValue('min-width'));
+        x >= 0 ? setX(-((slideMarginLeft + slideMarginRight) + slideWidth) * (events.length - 1)) : setX(x + ((slideMarginLeft + slideMarginRight) + slideWidth));
 
-        x >= 0 ? setX(-((slideMarginLeft + slideMarginRight) + (slideWidth * browserWidth)) * (events.length - 1)) : setX(x + ((slideMarginLeft + slideMarginRight) + (slideWidth * browserWidth)));
+        // const slideWidth: number = parseInt(slideStyles.getPropertyValue('min-width')) / 100;
+        // x >= 0 ? setX(-((slideMarginLeft + slideMarginRight) + (slideWidth * browserWidth)) * (events.length - 1)) : setX(x + ((slideMarginLeft + slideMarginRight) + (slideWidth * browserWidth)));
     };
 
     const goRight = function(): void {
@@ -65,15 +65,19 @@ export const Slider: React.FC = () => {
         const slide = document.querySelector('.slide') as Element;
         const slideStyles: CSSStyleDeclaration = window.getComputedStyle(slide);
 
-        const browserWidth: number = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+        // const browserWidth: number = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
         // +x and parseInt both convert string to integer
         // using slice to get rid of px
         const slideMarginLeft: number = +(slideStyles.getPropertyValue('margin-left').slice(0, -2));
         const slideMarginRight: number = parseInt(slideStyles.getPropertyValue('margin-right').slice(0, -2));
-        const slideWidth: number = parseInt(slideStyles.getPropertyValue('min-width')) / 100;
+        
+        const slideWidth: number = parseInt(slideStyles.getPropertyValue('min-width'));
+        x <= -((slideMarginLeft + slideMarginRight) + slideWidth) * (events.length - 1) ? setX(0) : setX(x - ((slideMarginLeft + slideMarginRight) + slideWidth));
 
-        x <= -((slideMarginLeft + slideMarginRight) + (slideWidth * browserWidth)) * (events.length - 1) ? setX(0) : setX(x - ((slideMarginLeft + slideMarginRight) + (slideWidth * browserWidth)));
+        // const slideWidth: number = parseInt(slideStyles.getPropertyValue('min-width')) / 100;
+        // x <= -((slideMarginLeft + slideMarginRight) + (slideWidth * browserWidth)) * (events.length - 1) ? setX(0) : setX(x - ((slideMarginLeft + slideMarginRight) + (slideWidth * browserWidth)));
+        
     };
 
     return (
@@ -103,18 +107,13 @@ export const Slider: React.FC = () => {
 const EventComponent: React.FC<Events> = ({event_name, image, year, month, day}) => {
 
     function getPlaceholder(event: any) {
-        event.target.src = "http://100.26.246.4:5000/placeholder/event.jpg";
-        // event.target.src = "http://localhost:5000/placeholder/event.jpg";   
+        event.target.src = '/images/placeholder/event.jpg';
     }
 
     return (
         <div style={{height: "100%", textAlign: "center"}}>
             <div style={{height: "60%"}}>
-                <img width="400" height="400" src={image} alt="slide-img" onError={getPlaceholder} style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover"
-                }}></img>
+                <img className="event-thumbnail" src={image} alt="slide-img" onError={getPlaceholder}></img>
             </div>
             <div style={{height: "40%", padding: "10px"}}>
                 <p>{event_name}</p>

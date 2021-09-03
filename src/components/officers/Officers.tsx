@@ -26,34 +26,16 @@ export const Officers: React.FC = () => {
 
     // simulate componentDidMount(), do axios call:
     useEffect(() => {
+
+        const eboardCards = makeOfficerCards(fetchEboard());
+        setEboard(eboardCards);
+        setSelectedOfficersGroup(eboardCards);
+
+        const jboardCards = makeOfficerCards(fetchJboard());
+        setJboard(jboardCards);
         
-        fetchEboard()
-            .then(eboard => {
-                const eboardCards = makeOfficerCards(eboard);
-                setEboard(eboardCards);
-                setSelectedOfficersGroup(eboardCards);
-            })
-            .catch(error => {
-                console.log(error);
-            });
-
-        fetchJboard()
-            .then(jboard => {
-                const jboardCards = makeOfficerCards(jboard);
-                setJboard(jboardCards);
-            })
-            .catch(error => {
-                console.log(error);
-            });
-
-        fetchDboard()
-            .then(dboard => {
-                const dboardCards = makeOfficerCards(dboard);
-                setDboard(dboardCards);
-            })
-            .catch(error => {
-                console.log(error);
-            });
+        const dboardCards = makeOfficerCards(fetchDboard());
+        setDboard(dboardCards);
         
     }, []);
 
@@ -151,11 +133,9 @@ export const Officers: React.FC = () => {
                 <div className="officers-highlight"></div>
                 <div className="officers-container">
                     {
-                        selectedOfficersGroup.map((item: JSX.Element, index: number) => {
-                            return (
-                                <div key={index} style={{margin: "2%"}}>{item}</div>
-                            )
-                        })
+                        selectedOfficersGroup.map((item: JSX.Element, index: number) => (
+                            <div key={index} style={{margin: "2%"}}>{item}</div>
+                        ))
                     }
                 </div>
             </div>
@@ -165,8 +145,7 @@ export const Officers: React.FC = () => {
 
 const OfficerCard: React.FC<Members> = ({first_name, last_name, role, position, linkedIn, start_year, end_year, image}) => {
     function getPlaceholder(event: any) {
-        event.target.src = "http://100.26.246.4:5000/placeholder/portrait.jpg";
-        // event.target.src = "http://localhost:5000/placeholder/portrait.jpg";
+        event.target.src = "/images/placeholder/profile.jpg";
     }
 
     return (

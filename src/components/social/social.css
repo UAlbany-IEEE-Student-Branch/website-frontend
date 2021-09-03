@@ -34,7 +34,7 @@
 }
 
 .social-container li:hover {
-    box-shadow: px -4px rgb(46, 36, 89);
+    box-shadow: -4px 4px rgb(46, 36, 89);
     -webkit-box-shadow: -4px 4px rgb(46, 36, 89);
 }
 

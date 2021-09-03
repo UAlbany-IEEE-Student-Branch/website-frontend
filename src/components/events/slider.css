@@ -33,15 +33,16 @@ body {
 
 .slide {
     position: relative;
-    min-width: 45%;
+    /* min-width: 25%; */
+    min-width: 350px;
     height: 95%;
     transition: 0.5s;
     overflow: hidden;
-    margin-left: 15%;
-    margin-right: 15%;
-    -webkit-box-shadow: 8px -8px rgb(46, 36, 89);
+    margin-left: 5%;
+    margin-right: 5%;
+    -webkit-box-shadow: -8px 8px rgb(46, 36, 89);
+    box-shadow: -8px 8px rgb(46, 36, 89);
     -webkit-border: 1px solid rgb(46, 36, 89);
-    box-shadow: 8px -8px rgb(46, 36, 89);
     border: 1px solid rgb(46, 36, 89);
 }
 
@@ -67,18 +68,24 @@ body {
 #goLeft {
     left: 0;
     border-radius: 0 1rem 1rem 0;
-    background: url('../images/left_arrow.svg') no-repeat center center;
+    background: url('../../images/arrows/left_arrow.svg') no-repeat center center;
 }
 
 #goRight {
     right: 0;
     border-radius: 1rem 0 0 1rem;
-    background: url('../images/right_arrow.svg') no-repeat center center;
+    background: url('../../images/arrows/right_arrow.svg') no-repeat center center;
+}
+
+.event-thumbnail {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media only screen and (max-width: 800px) {
     .slide {
-        min-width: 70%;
+        /* min-width: 70%; */
+        min-width: 400px;
         box-shadow: rgba(0, 0, 0, 0.117647) 0px 2px 4px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
         border: none;
     }
@@ -90,7 +97,8 @@ body {
 
 @media only screen and (max-width: 500px) {
     .slide {
-        min-width: 80%;
+        /* min-width: 80%; */
+        min-width: 400px;
         margin-left: 10%;
     }
 }
