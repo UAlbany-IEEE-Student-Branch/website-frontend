@@ -5,9 +5,16 @@
     max-height: 137px;
     display: flex;
     align-items: center;
+
+    /* Would be cool to make this a sticky header
+    I think you need to move this outside of the 
+    header/main component to make it work, i.e. needs
+    to be inline/grouped with everything in app.tsx */
     /* position: sticky;
     -webkit-position: sticky;
-    top: 0; */
+    top: 0; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid black; */
 }
 
 #logo-container {
@@ -48,7 +55,7 @@
     z-index: 5;
 }
 
-.nav-list {
+.nav-bar {
     max-width: 800px;
     list-style-type: none;
     margin: 0px;
@@ -56,18 +63,7 @@
     width: auto;
 }
 
-.nav-list-item {
-    /* font-family: Ubuntu;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 25px;
-    max-width: 120px;
-    min-width: 110px;
-    text-align: center;
-    display: inline;
-    color: #BFA1F0; */
+.nav-bar-item {
     font-family: Ubuntu;
     margin: 10px;
     padding: 5px;
@@ -79,57 +75,59 @@
     display: inline;
 }
 
-.nav-list-item:hover {
+.nav-bar-item:hover {
     cursor: pointer;
     border: 3px solid #EAB03C;
     
     background-color: rgb(46, 36, 89);
 }
 
-.nav-list-item:hover > a {
+.nav-bar-item:hover > a {
     color: white;
 }
 
-.nav-list-item > a {
+.nav-bar-item > a {
     text-decoration: none;
     transition: 0.1s;
     color: rgb(46, 36, 89);
 }
 
-#overlay {
-    height: 100vh;
+.fullscreen-nav {
+    height: 100%;
     width: 0;
     position: fixed;
     z-index: 3;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0);
-    transition: 0.1s;
+    background-color: #111;
     overflow-x: hidden;
-    display: none;
+    transition: 0.5s;
+    padding-top: 150px;
+    text-align:center;
 }
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    padding: 0;
-}
-
-#overlay a {
-    padding: 8px; 
+  
+.fullscreen-nav a {
+    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 25px;
     color: #818181;
-    display: block; 
-    transition: 0.05s;
+    display: block;
+    transition: 0.3s;
+  
 }
-
-#overlay a:hover, #overlay a:focus {
+  
+.fullscreen-nav a:hover{
     color: #f1f1f1;
 }
+  
+.fullscreen-nav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
 
 @media only screen and (max-width: 800px){
 
@@ -141,12 +139,8 @@
         max-width: 200px;
     }
 
-    .nav-list {
+    .nav-bar {
         display: none;
-    }
-
-    #overlay {
-        display: block;
     }
 
 }

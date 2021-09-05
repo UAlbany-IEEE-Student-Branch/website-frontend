@@ -1,24 +1,27 @@
 import React from 'react';
 import './navbar.css';
 
-type Props = {
+type NavbarProps = {
     className: string;
 }
 
+const ABOUT = 'About';
+const EVENTS = 'Events';
+const OFFICERS = 'Officers';
 
-const Navbar: React.FC<Props> = ({className}) =>{
+const Navbar: React.FC<NavbarProps> = ({className}) => {
 
-    const logoHandle = (e: any)  => {
+    const logoHandle = (e: any) => {
 
         const elem = e.target as HTMLElement;
         switch (elem.innerHTML) {
-            case "About":
+            case ABOUT:
                 document.getElementById("about-component")?.scrollIntoView();
                 break;
-            case "Event":
+            case EVENTS:
                 document.getElementById("events-component")?.scrollIntoView();
                 break;
-            case "Members":
+            case OFFICERS:
                 document.getElementById("officers-component")?.scrollIntoView();
                 break;
 
@@ -27,7 +30,7 @@ const Navbar: React.FC<Props> = ({className}) =>{
         const browserWidth: number = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 
         if (browserWidth < 800) {
-            const overlay = document.getElementById("overlay") as HTMLElement;
+            const overlay = document.getElementById("nav-overlay") as HTMLElement;
             if (overlay.style.width === "100%") {
                 overlay.style.width = "0";
             } else {
@@ -51,14 +54,12 @@ const Navbar: React.FC<Props> = ({className}) =>{
         }, 100);
 
         setTimeout(() => {
-
             circuits.classList.remove('circuits_3');
             circuits.classList.add('circuits_4');
 
-            let displayStatus = document.getElementsByClassName('navbar')[0];
-            // let display800Status = document.getElementsByClassName('welcomeText')[0];
+            const displayStatus = document.getElementsByClassName('navbar')[0];
 
-            if(displayStatus.classList.contains('display-none')) {
+            if (displayStatus.classList.contains('display-none')) {
                 displayStatus.classList.remove('display-none');
             } else {
                 displayStatus.classList.add('display-none');
@@ -66,41 +67,33 @@ const Navbar: React.FC<Props> = ({className}) =>{
         }, 150);
 
         setTimeout(() => {
-
             circuits.classList.remove('circuits_4');
             circuits.classList.add('circuits_0');
         }, 1000);
     }
 
-    return(
+    return (
+
         <div className="navbar-container">
+            <div id="nav-overlay" className="fullscreen-nav">
+                <a href="#about-component" onClick={logoHandle}>{ABOUT}</a>
+                <a href="#events-component" onClick={logoHandle}>{EVENTS}</a>
+                <a href="#officers-component" onClick={logoHandle}>{OFFICERS}</a>
+            </div>
             <div id="logo-container">
                 <img alt="circuits" id="circuits" className="circuits_0" />
                 <img alt="logo" className="logo1 nav-logo" onClick={logoHandle} />
             </div>
             <div className={className}>
-                <ul className="nav-list">
-                    <li className="nav-list-item" onClick={logoHandle}>
-                        <a href="#about-component" >About</a>
+                <ul className="nav-bar">
+                    <li className="nav-bar-item" onClick={logoHandle}>
+                        <a href="#about-component">{ABOUT}</a>
                     </li>
-                    <li className="nav-list-item" onClick={logoHandle}>
-                        <a href="#events-component"  >Event</a>
+                    <li className="nav-bar-item" onClick={logoHandle}>
+                        <a href="#events-component">{EVENTS}</a>
                     </li>
-                    <li className="nav-list-item" onClick={logoHandle}>
-                        <a href="#officers-component" >Members</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="overlay">
-                <ul className="overlay-content">
-                    <li className="overlay-nav-list-item">
-                        <a href="#about-component" onClick={logoHandle} >About</a>
-                    </li>
-                    <li className="overlay-nav-list-item">
-                        <a href="#events-component" onClick={logoHandle} >Event</a>
-                    </li>
-                    <li className="overlay-nav-list-item">
-                        <a href="#officers-component" onClick={logoHandle} >Members</a>
+                    <li className="nav-bar-item" onClick={logoHandle}>
+                        <a href="#officers-component">{OFFICERS}</a>
                     </li>
                 </ul>
             </div>
