@@ -5,76 +5,23 @@ import placeholder from '../../assets/placeholder/profile.jpg';
 
 export const Officers: React.FC = () => {
 
-    function makeOfficerCards(data: any) {
-        let fetchedOfficers: JSX.Element[] = [];
-        fetchedOfficers = data.map((item: Members) => {
-            return (
-                <OfficerCard
-                    id={item.id}
-                    first_name={item.first_name}
-                    last_name={item.last_name}
-                    role={item.role}
-                    position={item.position}
-                    linkedIn={item.linkedIn}
-                    start_year={item.start_year}
-                    end_year={item.end_year}
-                    image={item.image}
-                />
-            );
-        });
-        return fetchedOfficers;
-    }
-
     // simulate componentDidMount(), do axios call:
     useEffect(() => {
 
-        const eboardCards = makeOfficerCards(fetchEboard());
+        const eboardCards = fetchEboard();
         setEboard(eboardCards);
         setSelectedOfficersGroup(eboardCards);
 
-        const jboardCards = makeOfficerCards(fetchJboard());
+        const jboardCards = fetchJboard();
         setJboard(jboardCards);
-        
-        const dboardCards = makeOfficerCards(fetchDboard());
+
+        const dboardCards = fetchDboard();
         setDboard(dboardCards);
-        
     }, []);
 
-    const [eboard, setEboard] = useState([<OfficerCard
-        id={-1}
-        first_name={""}
-        last_name={""}
-        role={""}
-        position={""}
-        linkedIn={""}
-        start_year={0}
-        end_year={0}
-        image={""}
-    />]);
-
-    const [jboard, setJboard] = useState([<OfficerCard
-        id={-1}
-        first_name={""}
-        last_name={""}
-        role={""}
-        position={""}
-        linkedIn={""}
-        start_year={0}
-        end_year={0}
-        image={""}
-    />]);
-
-    const [dboard, setDboard] = useState([<OfficerCard
-        id={-1}
-        first_name={""}
-        last_name={""}
-        role={""}
-        position={""}
-        linkedIn={""}
-        start_year={0}
-        end_year={0}
-        image={""}
-    />]);
+    const [eboard, setEboard] = useState<Members[]>([])
+    const [jboard, setJboard] = useState<Members[]>([])
+    const [dboard, setDboard] = useState<Members[]>([])
 
     // hook with an initial state as the e board
     const [selectedOfficersGroup, setSelectedOfficersGroup] = useState(eboard);
@@ -134,8 +81,20 @@ export const Officers: React.FC = () => {
                 <div className="officers-highlight"></div>
                 <div className="officers-container">
                     {
-                        selectedOfficersGroup.map((item: JSX.Element, index: number) => (
-                            <div key={index} style={{margin: "2%"}}>{item}</div>
+                        selectedOfficersGroup.map((item: Members, index: number) => (
+                            <div key={index} style={{margin: "2%"}}>
+                                <OfficerCard
+                                    id={item.id}
+                                    first_name={item.first_name}
+                                    last_name={item.last_name}
+                                    role={item.role}
+                                    position={item.position}
+                                    linkedIn={item.linkedIn}
+                                    start_year={item.start_year}
+                                    end_year={item.end_year}
+                                    image={item.image}
+                                />
+                            </div>
                         ))
                     }
                 </div>
