@@ -10,33 +10,14 @@ export const Slider: React.FC = () => {
         (async () => {
             try {
                 const fetchedEvents = await fetchEvents();
-                const eventCards = fetchedEvents.map(item => (
-                    <EventComponent
-                        id={item.id}
-                        event_name={item.event_name}
-                        image={item.image}
-                        year={item.year}
-                        month={item.month}
-                        day={item.day}
-                        past_status={item.past_status}
-                    />
-                ));
-                setEvents(eventCards);
+                setEvents(fetchedEvents);
             } catch (error) {
                 console.log(error);
             }
         })();
     }, []);
 
-    const [events, setEvents] = useState([<EventComponent
-        id={-1}
-        event_name={"N/A"}
-        image={"N/A"}
-        year={0}
-        month={0}
-        day={0}
-        past_status={0}
-    />]);
+    const [events, setEvents] = useState<Events[]>([]);
 
     const [x, setX] = useState(0);
 
@@ -89,13 +70,19 @@ export const Slider: React.FC = () => {
             <div className="highlight"></div>
             <div className="slider">
                 {
-                    events.map((item: JSX.Element, index: number) => {
-                        return (
-                            <div key={index} className="slide" style={{transform:`translateX(${x}px)`}}>
-                                {item}
-                            </div>
-                        )
-                    })
+                    events.map((item, index) => (
+                        <div key={index} className="slide" style={{transform: `translateX(${x}px)`}}>
+                            <EventComponent 
+                                id={item.id}
+                                event_name={item.event_name}
+                                image={item.image}
+                                year={item.year}
+                                month={item.month}
+                                day={item.day}
+                                past_status={item.past_status} 
+                            />
+                        </div>
+                    ))
                 }
                 <button id="goLeft" onClick={goLeft}></button>
                 <button id="goRight" onClick={goRight}></button>
@@ -112,11 +99,11 @@ const EventComponent: React.FC<Events> = ({event_name, image, year, month, day})
     }
 
     return (
-        <div style={{height: "100%", textAlign: "center"}}>
-            <div style={{height: "60%"}}>
+        <div style={{height: '100%', textAlign: "center"}}>
+            <div>
                 <img className="event-thumbnail" src={image} alt="slide-img" onError={getPlaceholder}></img>
             </div>
-            <div style={{height: "40%", padding: "10px"}}>
+            <div style={{padding: "5%"}}>
                 <p>{event_name}</p>
                 <p>{month}/{day}/{year}</p>
             </div>

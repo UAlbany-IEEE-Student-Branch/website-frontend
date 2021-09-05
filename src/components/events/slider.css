@@ -22,22 +22,19 @@ body {
 .slider {
     position: relative;
     width: 100%;
-    height: 60vh;
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 20px 0;
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .slide {
     position: relative;
-    /* min-width: 25%; */
     min-width: 350px;
-    height: 95%;
+    height: 390px;
     transition: 0.5s;
-    overflow: hidden;
     margin-left: 5%;
     margin-right: 5%;
     -webkit-box-shadow: -8px 8px rgb(46, 36, 89);
@@ -51,7 +48,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     width: 5%;
-    height: 100%;
+    height: 90%;
     background: none;
     border: none;
     outline: none;
@@ -83,8 +80,13 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
+
+    #goRight, #goLeft {
+        width: 8%;
+        box-shadow: rgba(0, 0, 0, 0.117647) 0px 2px 4px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    }
+
     .slide {
-        /* min-width: 70%; */
         min-width: 400px;
         box-shadow: rgba(0, 0, 0, 0.117647) 0px 2px 4px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
         border: none;
@@ -96,9 +98,14 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
+
+    #goRight, #goLeft {
+        width: 11%;
+    }
+
     .slide {
-        /* min-width: 80%; */
-        min-width: 400px;
-        margin-left: 10%;
+        min-width: 270px;
+        margin-left: 13%;
+        height: 310px;
     }
 }
