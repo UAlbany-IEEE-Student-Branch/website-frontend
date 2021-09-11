@@ -5,11 +5,13 @@ import placeholder from '../../assets/placeholder/event.jpg';
 
 export const Slider: React.FC = () => {
 
+    const EVENT_LIMIT = 10;
+
     // simulate componentDidMount(), do axios call
     useEffect(() => {
         (async () => {
             try {
-                const fetchedEvents = await fetchEvents();
+                const fetchedEvents = await fetchEvents().reverse().slice(0, EVENT_LIMIT);
                 setEvents(fetchedEvents);
             } catch (error) {
                 console.log(error);
@@ -79,7 +81,7 @@ export const Slider: React.FC = () => {
                                 year={item.year}
                                 month={item.month}
                                 day={item.day}
-                                past_status={item.past_status} 
+                                youtube_url={item.youtube_url}
                             />
                         </div>
                     ))
@@ -92,7 +94,7 @@ export const Slider: React.FC = () => {
     );
 };
 
-const EventComponent: React.FC<Events> = ({event_name, image, year, month, day}) => {
+const EventComponent: React.FC<Events> = ({event_name, image, year, month, day, youtube_url}) => {
 
     function getPlaceholder(event: any) {
         event.target.src = placeholder;
@@ -106,6 +108,11 @@ const EventComponent: React.FC<Events> = ({event_name, image, year, month, day})
             <div style={{padding: "5%"}}>
                 <p>{event_name}</p>
                 <p>{month}/{day}/{year}</p>
+                {
+                    youtube_url
+                    ? <a href={youtube_url} target={"_blank"}>YouTube</a>
+                    : <div></div>
+                }
             </div>
         </div>
     );

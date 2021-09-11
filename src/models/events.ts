@@ -7,7 +7,7 @@ export type Events = {
     year: number;
     month: number;
     day: number;
-    past_status: number;
+    youtube_url: string | null;
 }
 
 export function getAllEvents() { 

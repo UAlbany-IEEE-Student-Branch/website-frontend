@@ -1,242 +1,353 @@
 [
     {
         "day": 4,
-        "event_code": null,
         "event_name": "Intro to remote management with Linux",
         "id": 1,
         "image": "/images/placeholder/event.jpg",
         "month": 4,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": null
     },
     {
         "day": 18,
-        "event_code": null,
         "event_name": "Create Your Own Website Portfolio with React",
         "id": 2,
         "image": "/images/placeholder/event.jpg",
         "month": 4,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": null
     },
     {
         "day": 25,
-        "event_code": null,
         "event_name": "Brainhack! Esoteric Languages Workshop and Spring 2020 Semester Wrapup",
         "id": 3,
         "image": "/images/placeholder/event.jpg",
         "month": 4,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": null
     },
     {
         "day": 10,
-        "event_code": "ieee_1_discord",
         "event_name": "Building Up your Profile with Technologies, Projects, Certifications, Activities, and Experience",
         "id": 4,
         "image": "/images/2020-2021/events/ieee_1_discord.jpg",
         "month": 9,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/sWdfyTdyLVo"
     },
     {
         "day": 16,
-        "event_code": "ieee_2_unity",
         "event_name": "Introduction to development with Unity",
         "id": 5,
         "image": "/images/2020-2021/events/ieee_2_unity.jpg",
         "month": 9,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/N2L2JaAv-ds"
     },
     {
         "day": 24,
-        "event_code": "ieee_3_code",
         "event_name": "Prepare for your tech interview with whiteboard coding practice",
         "id": 6,
         "image": "/images/2020-2021/events/ieee_3_code.jpg",
         "month": 9,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/S11zidnaSQc"
     },
     {
         "day": 30,
-        "event_code": "ieee_4_android",
         "event_name": "Android workshop1 - Introduction to Android developement",
         "id": 7,
         "image": "/images/2020-2021/events/ieee_4_android.jpg",
         "month": 9,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/fNyssj8UtpA"
     },
     {
         "day": 8,
-        "event_code": "ieee_5_project",
         "event_name": "Personal Project Showcase",
         "id": 8,
         "image": "/images/2020-2021/events/ieee_5_project.jpg",
         "month": 10,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/6Sxu-_XNJN8"
     },
     {
         "day": 14,
-        "event_code": "ieee_6_quantum",
         "event_name": "Technical Talk Watch Party - Quantum Computing For Computer Scientists",
         "id": 9,
         "image": "/images/2020-2021/events/ieee_6_quantum.jpg",
         "month": 10,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/m_ZkFn12npU"
     },
     {
         "day": 22,
-        "event_code": "ieee_7_family",
         "event_name": "Android Dev Series: Family Tree",
         "id": 10,
         "image": "/images/2020-2021/events/ieee_7_family.jpg",
         "month": 10,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/om55RNYBy4w"
     },
     {
         "day": 4,
-        "event_code": "ieee_8_camera",
         "event_name": "Android workshop2 - Introduction to using the camera in application",
         "id": 12,
         "image": "/images/2020-2021/events/ieee_8_camera.jpg",
         "month": 11,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/NGYjqSYWDVw"
     },
     {
         "day": 12,
-        "event_code": "ieee_9_neural",
         "event_name": "Introduction to machine learning with neural networks",
         "id": 13,
         "image": "/images/2020-2021/events/ieee_9_neural.jpg",
         "month": 11,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/hqMXhn5GElg"
     },
     {
         "day": 28,
-        "event_code": "ieee_10_github",
         "event_name": "Introduction to Git and Github",
         "id": 11,
         "image": "/images/2020-2021/events/ieee_10_github.jpg",
         "month": 10,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/ux6q8GxEJgA"
     },
     {
         "day": 19,
-        "event_code": "ieee_11_games",
         "event_name": "Introduction to Game Engines",
         "id": 14,
         "image": "/images/2020-2021/events/ieee_11_games.jpg",
         "month": 11,
-        "past_status": 1,
-        "year": 2020
+        "year": 2020,
+        "youtube_url": "https://youtu.be/eKaAwsTtF2A"
     },
     {
         "day": 5,
-        "event_code": "ieee_winter_1_c",
         "event_name": "OS Dev Workshop 1: The C programming language",
         "id": 15,
         "image": "/images/2020-2021/events/ieee_winter_1_c.jpg",
         "month": 1,
-        "past_status": 1,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": "https://youtu.be/FupWk_zDrH4"
     },
     {
         "day": 6,
-        "event_code": "ieee_winter_2_x86",
         "event_name": "OS Dev Workshop 2: x86 assembly and its relationship with C",
         "id": 16,
         "image": "/images/2020-2021/events/ieee_winter_2_x86.jpg",
         "month": 1,
-        "past_status": 1,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": "https://youtu.be/T9JoULJAMG4"
     },
     {
         "day": 7,
-        "event_code": "ieee_winter_2_OS",
         "event_name": "OS Dev Workshop 3: Operating System Development, the basics of building your own OS",
         "id": 17,
         "image": "/images/2020-2021/events/ieee_winter_2_OS.jpg",
         "month": 1,
-        "past_status": 1,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": "https://youtu.be/NeSbIyh8VCE"
     },
     {
         "day": 11,
-        "event_code": "ieee_spring_1",
         "event_name": "Spring 2021 General Interest Meeting",
         "id": 18,
         "image": "/images/2020-2021/events/ieee_spring_general_interest.jpg",
         "month": 2,
-        "past_status": 0,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": "https://youtu.be/a4z-NOPzAjQ"
     },
     {
         "day": 18,
-        "event_code": null,
         "event_name": "Introduction to Time Complexity and Big O Notation",
         "id": 19,
         "image": "/images/2020-2021/events/ieee_spring_1.jpg",
         "month": 2,
-        "past_status": 1,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": "https://youtu.be/d04rW-eezRM"
     },
     {
         "day": 24,
-        "event_code": null,
         "event_name": "Introduction to Vim",
         "id": 20,
         "image": "/images/2020-2021/events/ieee_spring_2.jpg",
         "month": 2,
-        "past_status": 1,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": "https://youtu.be/2ZqksQeYS9g"
     },
     {
         "day": 25,
-        "event_code": null,
         "event_name": "Preparing for a job in Industry",
         "id": 21,
         "image": "/images/placeholder/event.jpg",
         "month": 2,
-        "past_status": 1,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": null
     },
     {
         "day": 4,
-        "event_code": null,
         "event_name": "A Gentle Introduction to MATLAB",
         "id": 22,
         "image": "/images/2020-2021/events/ieee_spring_3.jpg",
         "month": 3,
-        "past_status": 0,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": "https://youtu.be/8DvwAip9DjE"
     },
     {
         "day": 10,
-        "event_code": null,
         "event_name": "Android Studio, reviewing the basics and building a simple surface view camera app",
         "id": 23,
         "image": "/images/placeholder/event.jpg",
         "month": 3,
-        "past_status": 0,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": "https://youtu.be/9DpOVWKU0rA"
     },
     {
         "day": 11,
-        "event_code": null,
         "event_name": "Introduction to The C# Programming Language with Professor Phipps, Live Q & A",
         "id": 24,
         "image": "/images/placeholder/event.jpg",
         "month": 3,
-        "past_status": 0,
-        "year": 2021
+        "year": 2021,
+        "youtube_url": "https://youtu.be/3WD-lJGQhr4"
+    },
+    {
+        "id": 25,
+        "day": 15, 
+        "month": 3, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Industry Interview Panel",
+        "youtube_url": "https://youtu.be/7-FQGA_FIAg"
+    },
+    {
+        "id": 26, 
+        "day": 18, 
+        "month": 3, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Darknet Diaries Watch Party and Co-Working Stream", 
+        "youtube_url": "https://youtu.be/fxHLwDlFN5A"
+    },
+    {
+        "id": 27, 
+        "day": 24, 
+        "month": 3, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Intro to Quantum Computing", 
+        "youtube_url": "https://youtu.be/MzxGlndbGSM"
+    }, 
+    {
+        "id": 28, 
+        "day": 25, 
+        "month": 3, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Kitware Q&A", 
+        "youtube_url": "https://youtu.be/_slqSWYRJeQ"
+    },
+    {
+        "id": 29, 
+        "day": 8, 
+        "month": 4, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Intro to REST APIs", 
+        "youtube_url": "https://youtu.be/doJlGLUt308"
+    }, 
+    {
+        "id": 30, 
+        "day": 12, 
+        "month": 4, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Intro to Python Part 1", 
+        "youtube_url": "https://youtu.be/SJJL-GRLNnE"
+    },
+    {
+        "id": 31, 
+        "day": 12, 
+        "month": 4, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Intro to Python Part 2", 
+        "youtube_url": "https://youtu.be/T9ptErhtrdk"
+    },
+    {
+        "id": 32, 
+        "day": 15, 
+        "month": 4, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Introduction to the Go Programming Language", 
+        "youtube_url": "https://youtu.be/SEe_BQHoG40"
+    },
+    {
+        "id": 33, 
+        "day": 22, 
+        "month": 4, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Machine Learning", 
+        "youtube_url": "https://youtu.be/GMjoXHNhQ9M"
+    },
+    {
+        "id": 34, 
+        "day": 23, 
+        "month": 4, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Software Design Patterns", 
+        "youtube_url": "https://youtu.be/Uz-to9qeQpI"
+    },
+    {
+        "id": 35, 
+        "day": 29,
+        "month": 4, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Introduction to Discord Bots", 
+        "youtube_url": "https://youtu.be/wH47NAlSX5w"
+    },
+    {
+        "id": 36, 
+        "day": 6, 
+        "month": 5, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Generation of Near-IR Ag-DNA via Machine Learning with AR-VAE", 
+        "youtube_url": "https://youtu.be/uR1S2bLH3fo"
+    },
+    {
+        "id": 37, 
+        "day": 6, 
+        "month": 5, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Introduction to Machine Learning with Tensorflow", 
+        "youtube_url": "https://youtu.be/3cI189iQR1I"
+    },
+    {
+        "id": 38, 
+        "day": 1, 
+        "month": 9, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Fall 2021 General Interest Meeting",
+        "youtube_url": "https://youtu.be/0v3fd-Cpf9g"
+    },
+    {
+        "id": 39, 
+        "day": 9, 
+        "month": 9, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Introduction to Machine Learning with Logistic Regression", 
+        "youtube_url": "https://youtu.be/YOsvIK4b_OI"
     }
 ]
