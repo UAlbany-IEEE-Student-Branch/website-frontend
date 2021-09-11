@@ -110,7 +110,7 @@ const EventComponent: React.FC<Events> = ({event_name, image, year, month, day, 
                 <p>{month}/{day}/{year}</p>
                 {
                     youtube_url
-                    ? <a href={youtube_url} target={"_blank"}>YouTube</a>
+                    ? <a href={youtube_url} target={"_blank"} rel="noreferrer">YouTube</a>
                     : <div></div>
                 }
             </div>

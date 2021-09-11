@@ -103,7 +103,7 @@ export const Officers: React.FC = () => {
     );
 }
 
-const OfficerCard: React.FC<Members> = ({first_name, last_name, role, position, linkedIn, start_year, end_year, image}) => {
+const OfficerCard: React.FC<Members> = ({first_name, last_name, position, linkedIn, image}) => {
     function getPlaceholder(event: any) {
         event.target.src = placeholder;
     }
@@ -114,6 +114,11 @@ const OfficerCard: React.FC<Members> = ({first_name, last_name, role, position, 
             <div>
                 <p>{first_name} {last_name}</p>
                 <p>{position}</p>
+                {
+                    linkedIn.length > 0
+                    ? <a href={linkedIn} target={"_blank"} rel="noreferrer">LinkedIn</a>
+                    : <div></div>
+                }
             </div>
         </div>
     );

@@ -80,6 +80,7 @@ body {
     box-shadow: -8px 8px rgb(46, 36, 89);
     -webkit-border: 1px solid rgb(46, 36, 89);
     border: 1px solid rgb(46, 36, 89);
+    padding-bottom: 10px;
 }
 
 .officer-card > img {
