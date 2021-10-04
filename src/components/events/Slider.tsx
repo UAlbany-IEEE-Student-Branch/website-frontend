@@ -9,9 +9,9 @@ export const Slider: React.FC = () => {
 
     // simulate componentDidMount(), do axios call
     useEffect(() => {
-        (async () => {
+        (() => {
             try {
-                const fetchedEvents = await fetchEvents().reverse().slice(0, EVENT_LIMIT);
+                const fetchedEvents = fetchEvents().reverse().slice(0, EVENT_LIMIT);
                 setEvents(fetchedEvents);
             } catch (error) {
                 console.log(error);
