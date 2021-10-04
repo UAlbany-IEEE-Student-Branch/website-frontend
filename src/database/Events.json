@@ -337,7 +337,7 @@
         "day": 1, 
         "month": 9, 
         "year": 2021, 
-        "image": "", 
+        "image": "/images/2021-2022/events/0_general_interest_meeting_thumbnail_2.jpg", 
         "event_name": "Fall 2021 General Interest Meeting",
         "youtube_url": "https://youtu.be/0v3fd-Cpf9g"
     },
@@ -346,8 +346,53 @@
         "day": 9, 
         "month": 9, 
         "year": 2021, 
-        "image": "", 
+        "image": "/images/2021-2022/events/1_thumbnail_2.jpg", 
         "event_name": "Introduction to Machine Learning with Logistic Regression", 
         "youtube_url": "https://youtu.be/YOsvIK4b_OI"
+    },
+    {
+        "id": 40, 
+        "day": 15, 
+        "month": 9, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/2_thumbnail_2.jpg", 
+        "event_name": "Linux Distributions and Virtual Machines", 
+        "youtube_url": "https://youtu.be/eOyoLZUdGPs"
+    },
+    {
+        "id": 41, 
+        "day": 16, 
+        "month": 9, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/3_thumbnail_2.jpg", 
+        "event_name": "How to Get a Job in Tech", 
+        "youtube_url": "https://youtu.be/7e7rMkpUJZM"
+    },
+    {
+        "id": 42, 
+        "day": 22, 
+        "month": 9, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/4_thumbnail_3.jpg", 
+        "event_name": "Imposter Syndrome and Burnout", 
+        "youtube_url": "https://youtu.be/3LVPZIXcSqY"
+    },
+    {
+        "id": 43, 
+        "day": 23, 
+        "month": 9, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Kitware OSTP Presentation", 
+        "youtube_url": ""
+    },
+    {
+        "id": 44, 
+        "day": 29, 
+        "month": 9, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Dynamic Programming", 
+        "youtube_url": ""
     }
 ]
