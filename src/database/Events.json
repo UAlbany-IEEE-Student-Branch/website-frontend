@@ -391,8 +391,17 @@
         "day": 29, 
         "month": 9, 
         "year": 2021, 
-        "image": "", 
+        "image": "/images/2021-2022/events/5_thumbnail.png", 
         "event_name": "Dynamic Programming", 
         "youtube_url": ""
+    },
+    {
+        "id": 45, 
+        "day": 29, 
+        "month": 9, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/6_thumbnail.png", 
+        "event_name": "Intro to Java 8", 
+        "youtube_url": "https://youtu.be/isx7aFhfCJw"
     }
 ]
