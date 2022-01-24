@@ -315,24 +315,6 @@
         "youtube_url": "https://youtu.be/wH47NAlSX5w"
     },
     {
-        "id": 36, 
-        "day": 6, 
-        "month": 5, 
-        "year": 2021, 
-        "image": "", 
-        "event_name": "Generation of Near-IR Ag-DNA via Machine Learning with AR-VAE", 
-        "youtube_url": "https://youtu.be/uR1S2bLH3fo"
-    },
-    {
-        "id": 37, 
-        "day": 6, 
-        "month": 5, 
-        "year": 2021, 
-        "image": "", 
-        "event_name": "Introduction to Machine Learning with Tensorflow", 
-        "youtube_url": "https://youtu.be/3cI189iQR1I"
-    },
-    {
         "id": 38, 
         "day": 1, 
         "month": 9, 
@@ -403,5 +385,194 @@
         "image": "/images/2021-2022/events/6_thumbnail.png", 
         "event_name": "Intro to Java 8", 
         "youtube_url": "https://youtu.be/isx7aFhfCJw"
+    },
+    {
+        "id": 46, 
+        "day": 30, 
+        "month": 9, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Intro to Unit Testing", 
+        "youtube_url": ""
+    },
+    {
+        "id": 47, 
+        "day": 14, 
+        "month": 10, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Jahnel Group Company Talk", 
+        "youtube_url": ""
+    },
+    {
+        "id": 48, 
+        "day": 20, 
+        "month": 10, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/discord_bot.png", 
+        "event_name": "How to write a Discord bot", 
+        "youtube_url": "https://www.youtube.com/watch?v=4LbQFLLcFJw"
+    },
+    {
+        "id": 49, 
+        "day": 25, 
+        "month": 10, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "LinkedIn and Handshake Workshop", 
+        "youtube_url": ""
+    },
+    {
+        "id": 50, 
+        "day": 27, 
+        "month": 10, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Learn SQL Workshop", 
+        "youtube_url": ""
+    },
+    {
+        "id": 51, 
+        "day": 28, 
+        "month": 10, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Analysis of Algorithms and Data Structures Workshop", 
+        "youtube_url": ""
+    },
+    {
+        "id": 52, 
+        "day": 31, 
+        "month": 10, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/IEEE_halloween.png", 
+        "event_name": "IEEE Halloween Party", 
+        "youtube_url": ""
+    },
+    {
+        "id": 53, 
+        "day": 3, 
+        "month": 11, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Talk from former startup owner", 
+        "youtube_url": ""
+    },
+    {
+        "id": 54, 
+        "day": 4, 
+        "month": 11, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "Machine Learning with Logistic Regression Workshop", 
+        "youtube_url": ""
+    },
+    {
+        "id": 55, 
+        "day": 10, 
+        "month": 11, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/web_p1.png", 
+        "event_name": "Frontend Development Part I: Intro to HTML and CSS", 
+        "youtube_url": "https://www.youtube.com/watch?v=5QIo8Z3OP0g&t=1978s"
+    },
+    {
+        "id": 56, 
+        "day": 11, 
+        "month": 11, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/web_p2.png", 
+        "event_name": "Frontend Development Part II: Intro to JavaScript", 
+        "youtube_url": ""
+    },
+    {
+        "id": 56, 
+        "day": 17, 
+        "month": 11, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/graphql.png", 
+        "event_name": "Introduction to GraphQL with JavaScript and MongoDB", 
+        "youtube_url": "https://www.youtube.com/watch?v=dnP3gFg-aew"
+    },
+    {
+        "id": 57, 
+        "day": 18, 
+        "month": 11, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "How Do We Make CPUs?", 
+        "youtube_url": ""
+    },
+    {
+        "id": 58, 
+        "day": 1, 
+        "month": 12, 
+        "year": 2021, 
+        "image": "/images/2021-2022/events/unit_testing.png", 
+        "event_name": "Unit Testing Workshop", 
+        "youtube_url": "https://www.youtube.com/watch?v=KEowEsiJxPI&t=1522s"
+    },
+    {
+        "id": 60, 
+        "day": 27, 
+        "month": 12, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "C Crash Course Day 1", 
+        "youtube_url": ""
+    },
+    {
+        "id": 61, 
+        "day": 28, 
+        "month": 12, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "C Crash Course Day 2", 
+        "youtube_url": "https://www.youtube.com/watch?v=EjfouYm1-m4"
+    },
+    {
+        "id": 62, 
+        "day": 29, 
+        "month": 12, 
+        "year": 2021, 
+        "image": "", 
+        "event_name": "C Crash Course Day 3", 
+        "youtube_url": "https://www.youtube.com/watch?v=_2H-khC55fM"
+    },
+    {
+        "id": 63, 
+        "day": 3, 
+        "month": 1, 
+        "year": 2022, 
+        "image": "", 
+        "event_name": "C Crash Course Day 4", 
+        "youtube_url": "https://www.youtube.com/watch?v=e_CbsOzVYu8"
+    },
+    {
+        "id": 64, 
+        "day": 4, 
+        "month": 1, 
+        "year": 2022, 
+        "image": "", 
+        "event_name": "C Crash Course Day 5", 
+        "youtube_url": "https://www.youtube.com/watch?v=LX0faSGKDnA"
+    },
+    {
+        "id": 65, 
+        "day": 5, 
+        "month": 1, 
+        "year": 2022, 
+        "image": "", 
+        "event_name": "C Crash Course Day 6", 
+        "youtube_url": "https://www.youtube.com/watch?v=VQeBlDN2ALU"
+    },
+    {
+        "id": 66, 
+        "day": 6, 
+        "month": 1, 
+        "year": 2022, 
+        "image": "", 
+        "event_name": "C Crash Course Day 7", 
+        "youtube_url": "https://www.youtube.com/watch?v=n7HhYtOb_bo"
     }
 ]
