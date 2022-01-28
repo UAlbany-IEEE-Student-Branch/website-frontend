@@ -165,7 +165,7 @@
         "day": 18,
         "event_name": "Introduction to Time Complexity and Big O Notation",
         "id": 19,
-        "image": "/images/2020-2021/events/ieee_spring_1.jpg",
+        "image": "/images/2020-2021/events/time_complexities.png",
         "month": 2,
         "year": 2021,
         "youtube_url": "https://youtu.be/d04rW-eezRM"
@@ -526,7 +526,7 @@
         "day": 28, 
         "month": 12, 
         "year": 2021, 
-        "image": "", 
+        "image": "/images/2021-2022/events/cn2.png", 
         "event_name": "C Crash Course Day 2", 
         "youtube_url": "https://www.youtube.com/watch?v=EjfouYm1-m4"
     },
@@ -535,7 +535,7 @@
         "day": 29, 
         "month": 12, 
         "year": 2021, 
-        "image": "", 
+        "image": "/images/2021-2022/events/cn3.png", 
         "event_name": "C Crash Course Day 3", 
         "youtube_url": "https://www.youtube.com/watch?v=_2H-khC55fM"
     },
@@ -544,7 +544,7 @@
         "day": 3, 
         "month": 1, 
         "year": 2022, 
-        "image": "", 
+        "image": "/images/2021-2022/events/cn4.png", 
         "event_name": "C Crash Course Day 4", 
         "youtube_url": "https://www.youtube.com/watch?v=e_CbsOzVYu8"
     },
@@ -553,7 +553,7 @@
         "day": 4, 
         "month": 1, 
         "year": 2022, 
-        "image": "", 
+        "image": "/images/2021-2022/events/cn5.png", 
         "event_name": "C Crash Course Day 5", 
         "youtube_url": "https://www.youtube.com/watch?v=LX0faSGKDnA"
     },
@@ -562,7 +562,7 @@
         "day": 5, 
         "month": 1, 
         "year": 2022, 
-        "image": "", 
+        "image": "/images/2021-2022/events/cn6.png", 
         "event_name": "C Crash Course Day 6", 
         "youtube_url": "https://www.youtube.com/watch?v=VQeBlDN2ALU"
     },
@@ -571,7 +571,7 @@
         "day": 6, 
         "month": 1, 
         "year": 2022, 
-        "image": "", 
+        "image": "/images/2021-2022/events/cn7.png", 
         "event_name": "C Crash Course Day 7", 
         "youtube_url": "https://www.youtube.com/watch?v=n7HhYtOb_bo"
     }

@@ -72,7 +72,7 @@
         "image": "/images/2021-2022/officers/null",
         "last_name": "",
         "linkedIn": "",
-        "position": "Junior Vice Chair",
+        "position": "Junior Chair",
         "role": "Jboard",
         "start_year": 2021
     },
@@ -122,28 +122,6 @@
     },
     {
         "end_year": -1,
-        "first_name": "Godswill",
-        "id": 11,
-        "image": "/images/2021-2022/officers/godswill_utionkpan.jfif",
-        "last_name": "Utionkpan",
-        "linkedIn": "https://www.linkedin.com/in/godswill-utionkpan-44bb72130/",
-        "position": "Social Media Director",
-        "role": "Dboard",
-        "start_year": 2020
-    },
-    {
-        "end_year": -1,
-        "first_name": "Kiran",
-        "id": 12,
-        "image": "/images/2021-2022/officers/kiran_aziz.png",
-        "last_name": "Aziz",
-        "linkedIn": "https://www.linkedin.com/in/kiranaziz/",
-        "position": "Programming Director",
-        "role": "Dboard",
-        "start_year": 2021
-    },
-    {
-        "end_year": -1,
         "first_name": "Hafez",
         "id": 13,
         "image": "/images/2021-2022/officers/null",
@@ -163,5 +141,60 @@
         "position": "Outreach Director",
         "role": "Dboard",
         "start_year": 2021
+    },
+    {
+        "end_year": -1,
+        "first_name": "Taha",
+        "id": 14,
+        "image": "/images/2021-2022/officers/null",
+        "last_name": "Rahman",
+        "linkedIn": "",
+        "position": "Marketing Director",
+        "role": "Dboard",
+        "start_year": 2021
+    },
+    {
+        "end_year": -1,
+        "first_name": "Kiran",
+        "id": 12,
+        "image": "/images/2021-2022/officers/kiran_aziz.png",
+        "last_name": "Aziz",
+        "linkedIn": "https://www.linkedin.com/in/kiranaziz/",
+        "position": "Programming Director",
+        "role": "Dboard",
+        "start_year": 2021
+    },
+    {
+        "end_year": -1,
+        "first_name": "Godswill",
+        "id": 11,
+        "image": "/images/2021-2022/officers/godswill_utionkpan.jfif",
+        "last_name": "Utionkpan",
+        "linkedIn": "https://www.linkedin.com/in/godswill-utionkpan-44bb72130/",
+        "position": "Social Media Director",
+        "role": "Dboard",
+        "start_year": 2020
+    },
+    {
+        "end_year": -1,
+        "first_name": "Vacant",
+        "id": 11,
+        "image": "/images/2021-2022/officers/null",
+        "last_name": "",
+        "linkedIn": "",
+        "position": "University Relations Director",
+        "role": "Dboard",
+        "start_year": 2022
+    },
+    {
+        "end_year": -1,
+        "first_name": "Vacant",
+        "id": 11,
+        "image": "/images/2021-2022/officers/null",
+        "last_name": "",
+        "linkedIn": "",
+        "position": "Diversity and Inclusion Director",
+        "role": "Dboard",
+        "start_year": 2022
     }
 ]
