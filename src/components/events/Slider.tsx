@@ -5,7 +5,7 @@ import placeholder from '../../assets/placeholder/event.jpg';
 
 export const Slider: React.FC = () => {
 
-    const EVENT_LIMIT = 10;
+    const EVENT_LIMIT = 20;
 
     // simulate componentDidMount(), do axios call
     useEffect(() => {
