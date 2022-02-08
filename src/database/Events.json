@@ -574,5 +574,14 @@
         "image": "/images/2021-2022/events/cn7.png", 
         "event_name": "C Crash Course Day 7", 
         "youtube_url": "https://www.youtube.com/watch?v=n7HhYtOb_bo"
+    },
+{
+        "id": 67, 
+        "day": 2, 
+        "month": 2, 
+        "year": 2022, 
+        "image": "/images/2021-2022/events/null", 
+        "event_name": "Intro to Blockchain", 
+        "youtube_url": "https://www.youtube.com/watch?v=4rnAlX5iAt4"
     }
 ]
